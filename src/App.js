@@ -2,7 +2,8 @@ import Formulario from "./components/Form";
 
 function App() {
   return (
-     <Formulario/>
+    <h1>HOLA</h1>
+     //<Formulario/>
   );
 }
 
