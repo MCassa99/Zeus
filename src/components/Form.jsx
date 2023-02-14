@@ -45,12 +45,12 @@ class Formulario extends React.Component {
     return (
         <div className='bg-dark container-fluid h-100 p-4'>
             <div className='bg-primary bg-gradient container row p-3 border border border-primary rounded '>
-                <div className='col-2 align-items-center justify-content-center'>
+                <div className='col-2 align-items-center justify-content-center d-none d-lg-block'>
                     <div className='mt-4 '>
                         <img className='Logo' src={Logo} alt="NO IMAGE" />
                     </div>
                 </div>
-                <div className='col-10 p-3'>
+                <div className='col-lg-10 col-md-12 col-sm-12 p-3 '>
                     <form onSubmit={this.handleSubmit}>
                         <div className="row w-100">
                             <div className='col-12'>
