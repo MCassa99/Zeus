@@ -54,76 +54,75 @@ class Formulario extends React.Component {
                     <form onSubmit={this.handleSubmit}>
                         <div className="row w-100">
                             <div className='col-12'>
-                                <label htmlFor="localidad">Localidad:</label>
-                                <input type="text" name="localidad" id="localidad" value={this.state.localidad} onChange={this.handleInputChange} />
-                        
+                                <label htmlFor="localidad" className='font-monospace fs-6 title'>Localidad:</label>
+                                <input type="text" name="localidad" className="form-control " id="localidad" value={this.state.localidad} onChange={this.handleInputChange} />
                             </div>
                         </div>
                         <div className="row w-100">
                             <div className="form-group col-sm-6">
-                                <label htmlFor="fechaEvento">Fecha de el Evento:</label>
-                                <input type="date" name="fechaEvento" id="fechaEvento" value={this.state.fechaEvento} onChange={this.handleInputChange} />
+                                <label htmlFor="fechaEvento" className='font-monospace fs-6 title'>Fecha de el Evento:</label>
+                                <input type="date" name="fechaEvento" className="form-control " id="fechaEvento" value={this.state.fechaEvento} onChange={this.handleInputChange} />
                             </div>
                             <div className="form-group col-sm-6">
-                                <label htmlFor="horaComienzo">Hora de Comienzo:</label>
-                                <input type="time" name="horaComienzo" id="horaComienzo" value={this.state.horaComienzo} onChange={this.handleInputChange} />
+                                <label htmlFor="horaComienzo" className='font-monospace fs-6 title'>Hora de Comienzo:</label>
+                                <input type="time" name="horaComienzo" className="form-control " id="horaComienzo" value={this.state.horaComienzo} onChange={this.handleInputChange} />
                             </div>
                         </div>
                         <div className="row w-100">
                             <div className="form-group col-sm-6">
-                                <label htmlFor="nombre">Nombre:</label>
-                                <input type="text" name="nombre" id="nombre" value={this.state.nombre} onChange={this.handleInputChange} />
+                                <label htmlFor="nombre" className='font-monospace fs-6 title'>Nombre:</label>
+                                <input type="text" name="nombre" className="form-control " id="nombre" value={this.state.nombre} onChange={this.handleInputChange} />
                             </div>
                             <div className="form-group col-sm-6">
-                                <label htmlFor="apodo">Apodo:</label>
-                                <input type="text" name="apodo" id="apodo" value={this.state.apodo} onChange={this.handleInputChange} />
+                                <label htmlFor="apodo" className='font-monospace fs-6 title'>Apodo:</label>
+                                <input type="text" name="apodo" className="form-control " id="apodo" value={this.state.apodo} onChange={this.handleInputChange} />
                             </div>
                         </div>
                         <div className="row w-100">
                             <div className='col-12'>
-                                <label htmlFor="cancionEntrada">¿Con que cancion te gustaria entrar?</label>
-                                <input type="text" name="cancionEntrada" id="cancionEntrada" value={this.state.cancionEntrada} onChange={this.handleInputChange} />
+                                <label htmlFor="cancionEntrada" className='font-monospace fs-6 title'>¿Con que cancion te gustaria entrar?</label>
+                                <input type="text" name="cancionEntrada" className="form-control " id="cancionEntrada" value={this.state.cancionEntrada} onChange={this.handleInputChange} />
                             </div>
                         </div>
                         <div className='row w-100'>
                             <div className='col-12'>
-                                <label htmlFor="valsPreferido">¿Que vals prefieres?</label>
-                                <input type="text" name="valsPreferido" id="valsPreferido" value={this.state.valsPreferido} onChange={this.handleInputChange} />
+                                <label htmlFor="valsPreferido" className='font-monospace fs-6 title'>¿Que vals prefieres?</label>
+                                <input type="text" name="valsPreferido" className="form-control " id="valsPreferido" value={this.state.valsPreferido} onChange={this.handleInputChange} />
                             </div>
                         </div>
                         <div className='row w-100'>
                             <div className='col-12'>
-                                <label htmlFor="cancionInicioFiesta">¿Con que cancion te gustaria comenzar tu fiesta?</label>
-                                <input type="text" name="cancionInicioFiesta" id="cancionInicioFiesta" value={this.state.cancionInicioFiesta} onChange={this.handleInputChange} />
+                                <label htmlFor="cancionInicioFiesta" className='font-monospace fs-6 title'>¿Con que cancion te gustaria comenzar tu fiesta?</label>
+                                <input type="text" name="cancionInicioFiesta" className="form-control " id="cancionInicioFiesta" value={this.state.cancionInicioFiesta} onChange={this.handleInputChange} />
                             </div>
                         </div>
                         <div className='row w-100'>
                             <div className='col-12'>
-                                <label htmlFor="musicaNoPuedeFaltar">¿Que musica o cancion no puede faltar en tu fiesta?</label>
-                                <input type="text" name="musicaNoPuedeFaltar" id="musicaNoPuedeFaltar" value={this.state.musicaNoPuedeFaltar} onChange={this.handleInputChange} />
+                                <label htmlFor="musicaNoPuedeFaltar" className='font-monospace fs-6 title'>¿Que musica o cancion no puede faltar en tu fiesta?</label>
+                                <input type="text" name="musicaNoPuedeFaltar" className="form-control " id="musicaNoPuedeFaltar" value={this.state.musicaNoPuedeFaltar} onChange={this.handleInputChange} />
                             </div>
                         </div>
                         <div className='row w-100'>
                             <div className='col-12'>
-                                <label htmlFor="musicaNoDebeEstar">¿Que musica o cancion no debe estar en tu fiesta?</label>
-                                <input type="text" name="musicaNoDebeEstar" id="musicaNoDebeEstar" value={this.state.musicaNoDebeEstar} onChange={this.handleInputChange} />
+                                <label htmlFor="musicaNoDebeEstar" className='font-monospace fs-6 title'>¿Que musica o cancion no debe estar en tu fiesta?</label>
+                                <input type="text" name="musicaNoDebeEstar" className="form-control " id="musicaNoDebeEstar" value={this.state.musicaNoDebeEstar} onChange={this.handleInputChange} />
                             </div>
                         </div>
                         <div className='row w-100'>
                             <div className='col-12'>
-                                <label htmlFor="cancionesCorteTorta">¿Que canciones prefieres para el corte de la torta?</label>
-                                <input type="text" name="cancionesCorteTorta" id="cancionesCorteTorta" value={this.state.cancionesCorteTorta} onChange={this.handleInputChange} />
+                                <label htmlFor="cancionesCorteTorta" className='font-monospace fs-6 title'>¿Que canciones prefieres para el corte de la torta?</label>
+                                <input type="text" name="cancionesCorteTorta" className="form-control " id="cancionesCorteTorta" value={this.state.cancionesCorteTorta} onChange={this.handleInputChange} />
                             </div>
                         </div>
                         <div className='row w-100'>
                             <div className='col-12'>
-                                <label htmlFor="momentoEspecial">Si hay algun momento especial en tu fiesta, queremos que lo aclares aqui:</label>
-                                <textarea name="momentoEspecial" id="momentoEspecial" value={this.state.momentoEspecial} onChange={this.handleInputChange} />
+                                <label htmlFor="momentoEspecial" className='font-monospace fs-6 title'>Si hay algun momento especial en tu fiesta, queremos que lo aclares aqui:</label>
+                                <textarea name="momentoEspecial" className="form-control " id="momentoEspecial" value={this.state.momentoEspecial} onChange={this.handleInputChange} />
                             </div>
                         </div>
                         <div className='row w-100'>
-                            <div className='col-6'>
-                                <button type="submit">Descargar y enviar formulario en PDF</button>
+                            <div className='col-12 text-center mt-3 '>
+                                <button type="submit" className='text-wrap'>Descargar y enviar formulario en PDF</button>
                             </div>
                         </div>
                     </form>

@@ -81,3 +81,11 @@
   .container {
     max-width: 50rem;
   }
+
+  .row{
+    margin-bottom: -0.5rem;
+  }
+
+  .title{
+    margin-bottom: -0.1rem;
+  }
