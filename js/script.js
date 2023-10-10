@@ -39,4 +39,6 @@ function descargar() {
     console.log(selectedValue);
     // Guarda el PDF
     doc.save(nombre + '.pdf');
+    let texto = `Hola, como estas? Soy ${nombre} esta es mi planilla de evento para la fiesta de el ${fecha}.\nMuchas Gracias!`
+    window.location.replace('https://wa.me/59898595425/?text='+texto)
 }
