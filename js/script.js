@@ -36,9 +36,8 @@ function descargar() {
     doc.text(10, 120, '¿Qué canciones prefieres para el corte de la torta?: ' + torta);
     doc.text(10, 130, 'Si hay algún momento especial en tu fiesta, queremos que lo aclares aquí: ' + momento);
 
-    console.log(selectedValue);
     // Guarda el PDF
     doc.save(nombre + '.pdf');
-    let texto = `Hola, como estas? Soy ${nombre} esta es mi planilla de evento para la fiesta de el ${fecha}.\nMuchas Gracias!`
-    window.location.replace('https://wa.me/59898595425/?text='+texto)
+    let texto = `Hola, como estas? Soy ${nombre} esta es mi planilla de evento para la fiesta de el ${fecha}.\nMuchas Gracias!`;
+    window.location.replace('https://wa.me/59898595425?text='+texto);
 }
